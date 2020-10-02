@@ -48,7 +48,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "TC26_kullanici hotelreservationlist sayfasinda verileri girerek reservation arar",
+  "name": "TC27_kullanici hoteledit sayfasinda verileri girerek hotel bilgilerini gunceller",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -56,46 +56,86 @@ formatter.scenario({
       "name": "@koalapalace"
     },
     {
-      "name": "@hotelreservationsearch"
+      "name": "@hoteledit"
     }
   ]
 });
 formatter.step({
-  "name": "kullanici hotelroomreservationlist sayfasina gider",
+  "name": "kullanici hoteledit \"http://www.kaolapalace-qa-environment2.com/admin/HotelAdmin/Edit?Id\u003d4\" sayfasina gider",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_sayfasina_gider()"
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_sayfasina_gider(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici hotelroomreservationlist hotelroomid bolumunde \"team06\" secer",
+  "name": "kullanici hoteledit code bolumunu \"999\" ile gunceller",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_hotelroomid_bolumunde_secer(java.lang.String)"
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_code_bolumunu_ile_gunceller(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici hotelroomreservationlist arama kutusuna tiklar",
+  "name": "kullanici hoteledit name bolumunu \"sonDers\" ile gunceller",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_arama_kutusuna_tiklar()"
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_name_bolumunu_ile_gunceller(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "kullanici hotelroomreservationlist kayitlarini inceler",
+  "name": "kullanici hoteledit adress bolumunu \"Cikmaz sk.\" ile gunceller",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_adress_bolumunu_ile_gunceller(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanici hoteledit phone bolumunu \"0123456789\" ile gunceller",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_phone_bolumunu_ile_gunceller(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanici hoteledit mail bolumunu \"sonders@son.com\" ile gunceller",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_mail_bolumunu_ile_gunceller(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanici hoteledit save butonuna tiklar",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_save_butonuna_tiklar()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "kullanici hoteledit \"Hotel was updated successfully\" yazisini dogrular",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_kayitlarini_inceler()"
+  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_yazisini_dogrular(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
