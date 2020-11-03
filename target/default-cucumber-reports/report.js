@@ -1,146 +1,40 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/koalapalace.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/dbcreate.feature");
 formatter.feature({
-  "name": "Koala Palace",
+  "name": "Tabloda Veri Create Etme",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@koalapalace"
+      "name": "@dbcreate"
     }
   ]
 });
-formatter.background({
-  "name": "Koala Palace Admin Giris",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "kullanici koalapalace admin sayfasina gider",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "kullanici kullaniciadi ve sifresini girer",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "kullanici giris islemini gerceklestirir",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.scenario({
-  "name": "TC27_kullanici hoteledit sayfasinda verileri girerek hotel bilgilerini gunceller",
+  "name": "kullanici tabloda yeni bir reservasyon olusturur",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@koalapalace"
-    },
-    {
-      "name": "@hoteledit"
+      "name": "@dbcreate"
     }
   ]
 });
 formatter.step({
-  "name": "kullanici hoteledit \"http://www.kaolapalace-qa-environment2.com/admin/HotelAdmin/Edit?Id\u003d4\" sayfasina gider",
+  "name": "kullanici dbutils ile veritabanina baglanir",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_sayfasina_gider(java.lang.String)"
+  "location": "database_stepdefinitions.DbUpdateStepDef.kullanici_dbutils_ile_veritabanina_baglanir()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "kullanici hoteledit code bolumunu \"999\" ile gunceller",
+  "name": "kullanici yeni bir rezervasyon olusturur",
   "keyword": "And "
 });
-formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_code_bolumunu_ile_gunceller(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "kullanici hoteledit name bolumunu \"sonDers\" ile gunceller",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_name_bolumunu_ile_gunceller(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "kullanici hoteledit adress bolumunu \"Cikmaz sk.\" ile gunceller",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_adress_bolumunu_ile_gunceller(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "kullanici hoteledit phone bolumunu \"0123456789\" ile gunceller",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_phone_bolumunu_ile_gunceller(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "kullanici hoteledit mail bolumunu \"sonders@son.com\" ile gunceller",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_mail_bolumunu_ile_gunceller(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "kullanici hoteledit save butonuna tiklar",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_save_butonuna_tiklar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "kullanici hoteledit \"Hotel was updated successfully\" yazisini dogrular",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hoteledit_yazisini_dogrular(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
+  "status": "undefined"
 });
 });
